@@ -31,7 +31,9 @@ jobs:
           terraform_version: 1.4.6
 
       - name: Initialize Terraform
-        run: terraform init -plugin-dir=~/.terraform.d/plugin-cache
+        run: |
+          mkdir -p ~/.terraform.d/plugin-cache
+          terraform init -plugin-dir=~/.terraform.d/plugin-cache
 
       - name: Validate Terraform configuration
         run: terraform validate
