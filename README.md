@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# terraform-project
-=======
 # Terraform Azure Function App
 
 This project contains Terraform code to create a resource group for Azure Function Apps. It is structured to modularize the resource group creation, making it reusable and easy to manage.
@@ -74,4 +71,3 @@ terraform destroy
 ## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
->>>>>>> 21b9af3 (Initial commit of Terraform project)
