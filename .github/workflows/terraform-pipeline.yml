@@ -29,8 +29,8 @@ jobs:
         run: terraform validate
 
       - name: Plan Terraform changes
-        run: terraform plan -out=tfplan
+        run: terraform plan -out=tfplan -var="resource_group_name=test-rg-terraform" -var="resource_group_location=westeurope"
 
       - name: Apply Terraform changes
-        run: terraform apply -auto-approve tfplan
+        run: terraform apply -auto-approve tfplan -var="resource_group_name=test-rg-terraform" -var="resource_group_location=westeurope"
 
